@@ -3,6 +3,7 @@
 
 # Arquivo full
 .DS_Store
+.csv
 
 # Arquivo full
 .tmp
