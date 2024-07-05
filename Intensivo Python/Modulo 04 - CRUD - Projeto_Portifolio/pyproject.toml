@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "modulo 04 - crud - projeto-portifolio"
+version = "0.1.0"
+description = ""
+authors = ["Lucas-Sobreira <lucas-andrade2011@live.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+sqlmodel = "^0.0.19"
+sqlalchemy = "^2.0.31"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
