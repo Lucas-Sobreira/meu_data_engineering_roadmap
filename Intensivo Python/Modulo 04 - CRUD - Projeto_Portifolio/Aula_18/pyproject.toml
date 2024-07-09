@@ -9,6 +9,7 @@ readme = "README.md"
 python = "^3.12"
 requests = "^2.32.3"
 pydantic = "^2.8.2"
+sqlalchemy = "^2.0.31"
 
 
 [build-system]
