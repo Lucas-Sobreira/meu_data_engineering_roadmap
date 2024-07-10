@@ -1,0 +1,8 @@
+https://fastapi.tiangolo.com/
+https://github.com/tiangolo/fastapi
+
+Para rodar a aplicação
+uvicorn main:app --reload
+
+Para ver a documentação da API criada... 
+http://localhost:8000/docs
