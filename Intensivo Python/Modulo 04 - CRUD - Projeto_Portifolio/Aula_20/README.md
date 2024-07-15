@@ -1,264 +1,262 @@
-# Jornada de dados 2024
-
-Nossa missão é **fornecer o melhor ensino em engenharia de dados**
-
-Se você quer:
-
-1) Construir uma **base sólida** em Python e SQL
-2) Aprender as **principais habilidades e ferramentas** de engenharia de dados
-3) Criar ou melhorar seu **portfólio** de dados
-4) Criar ou aumentar o seu **networking** na área
-5) Mudar ou dar o **próximo passo em sua carreira**
-
-A **Jornada de Dados** é o seu lugar
-
-[Visite o nosso site](https://suajornadadedados.com.br/)
-
-## Calendário
-
-|Data |Workshop|Horário e canal|
-|-----|--------|--------|
-|01/09/23|Como estruturar o seu projeto de dados do zero| [Link](https://github.com/lvgalvao/DataProjectStarterKit)
-|01/10/23|Do Jupyter Notebook Pro Deploy| [Link](https://github.com/lvgalvao/Do-Jupyter-Notebook-Pro-Deploy)
-|01/11/23|Como construir um DW barato| [Link](https://github.com/lvgalvao/workshop-dw-pagando-pouco) e [Link](https://github.com/lvgalvao/W03_duckdb_dbt)
-|24/01|Automacao Data Quality Excel ETL| gravação na plataforma de alunos
-|27/01|Projeto e processos do Zero| gravação na plataforma de alunos
-|24/02|Pydantic, Data Quality e TDD em dados| gravação na plataforma de alunos
-|09/03|Docker para analista e engenheiro de dados: ajudando o seu deploy| gravação na plataforma de alunos
-|12/03|ETL com Python do Zero ao Deploy | gravação na plataforma de alunos
-|23/03|Orquestrando suas ETLs com Airflow | gravação na plataforma de alunos
-|13/04|Web scraping e noSQL | gravação na plataforma de alunos
-|27/04|restAPI fastAPI Deploy| gravação na plataforma de alunos
-|25/05|Amazon SQS e lambda | gravação na plataforma de alunos
-|11/06| Data Warehouse com Python, SQL e dbt-core Part. Kaio Silva| [Youtube](https://www.youtube.com/watch?v=n3R0c2ZB6BQ)
-|13/06| Qualidade de dados em ETL com Pandera e Python: Um Guia para Contrato de Dados Part. Renan Heckert | [Youtube](https://www.youtube.com/watch?v=IQtuWsNmB4o)
-|19/06|Crie pipelines CI/CD com dbt e github actions Part. Bruno Souza | [Youtube](https://www.youtube.com/watch?v=lQeQX71KVAU)
-|Em andamento|Bootcamp de Web Scraping avançado| 19h google meet
-|29/06|Dashboard e frontend| 09h google meet
-|Julho|Kafka Streaming data processing| 09h google meet
-|Julho|Infra as a Code com Terraform| 09h google meet
-|Agosto|Prometheus Datadog Sentry Monitoramento| 09h google meet
-|Agosto|Machine Learning Ops| 09h google meet
-|Agosto|Databricks e Fabric, nosso DW de milhoes| 09h google meet
-
-## Calendário Bootcamp - Python do zero
-
-Um intensivo único para você iniciar com Python e ir até tópicos avançados (API por exemplo) para você resolver problemas reais
-
-|Data |Workshop|Horário|
-|-----|--------|--------|
-| 19/02 | Python, Git e VScode: Python do Zero | 12am |
-| 20/02 | TypeError, Type Check, Type Conversion, try-except e if | 12am |
-| 21/02 | Controle de Fluxo: DEBUG, IF, FOR, While, Listas e Dicionários | 12am |
-| 22/02 | Tipos complexos e Type Hint (Dicionários vs DataFrames Vs Tabelas Vs Excel) | 12am |
-| 23/02 | Projeto 01: Leitura e Escrita de Arquivos, lendo 1 bilhão de linhas | 12am |
-| 26/02 | Exercício de revisão | 12am |
-| 27/02 | Funções em Python e Estrutura de Dados - Parte 1 | 12am |
-| 28/02 | Funções em Python e Estrutura de Dados - Parte 2 | 12am |
-| 29/02 | Funções em Python e Estrutura de Dados - Parte 3 | 12am |
-| 01/03 | Aula de revisão | 12am |
-| 04/03 | Introdução a POO | 19pm |
-| 05/03 | Introdução às Classes em Python - Parte 01 | 19pm |
-| 06/03 | Introdução às Classes em Python - Parte 02| 19pm |
-| 07/03 | Introdução às Classes em Python - Parte 03 | | 19pm |
-| 08/03 | Introdução às Classes em Python - Parte 04 | 19pm |
-| 18/03 | Aula de revisão de programação orientada a objetos + SQLModel | 12am |
-| 19/03 | SQLAlchemy - Conjunto de ferramentas para manipular SQL em Python | 12am |
-| 20/03 | O que é uma API? Request, Pydantic e fazendo nosso CRUD | 12am |
-| 21/03 | O que é uma API? Criando nossa primeira API | 12am |
-| 22/03 | Nosso Projeto de CRUD Backend + Frontend + Banco de Dados | 12 am |
-
-## Calendário Bootcamp - SQL início dia 22/04
-
-Um workshop focado em SQL para engenharia de dados
-
-1. Introdução ao SQL Básico:
-
-• Comandos fundamentais (SELECT, INSERT, UPDATE, DELETE).
-• Funções de agregação e filtragem.
-• Joins e subqueries.
-
-2. Fundamentos de Infraestrutura de Banco de Dados:
-• Visão geral de índices e seu impacto no desempenho.
-• Particionamento de dados e estratégias.
-• Conceitos de ACID para garantir a integridade dos dados.
-
-3. Configuração do Ambiente Local:
-• Instalação e configuração de um ambiente de desenvolvimento SQL local.
-
-4. Uso do Postgres com Docker:
-• Criação de um ambiente Docker para o PostgreSQL.
-
-5. Configuração do Amazon RDS para Produção:
-• Configuração e otimização do Amazon RDS.
-
-6. ETL (Extract, Transform, Load):
-• Conceitos e ferramentas para ETL.
-• Prática de transformação de dados e carga em um data warehouse.
-
-7. Procedures e Automatização:
-• Criação e uso de stored procedures para automatização de tarefas.
-• Princípios de design e manutenção de procedures.
+# CRUD FASTAPI POSTGRES STREAMLIT
 
-8. Testes Unitários em SQL:
-• Introdução aos testes de software e como aplicá-los ao SQL.
-• Ferramentas e frameworks de teste específicos para SQL.
+Você sabe o que é CRUD?
 
-9. Integração com DBT (Data Build Tool):
-• Cinco aulas cobrindo desde a introdução ao DBT até casos de uso avançados.
-• Melhores práticas para modelagem de dados e versionamento com DBT.
+![Imagem CRUD](assets/crud.jpeg)
 
-10. Orquestração de Workflows com Airflow:
-• Introdução ao Apache Airflow e sua importância na orquestração de tarefas de engenharia de dados.
-• Como integrar processos de ETL, testes e outras tarefas automatizadas com Airflow.
+A BlackFriday ta chegando. Você sabe como que o Iphone fica mais barato? Você sabe como que o vídeo game é cadastrado? Você sabia que quando abre o seu navegador, nada mais é do que o seu browser fazendo um SELECT no banco do Mercado Livre 🤯
 
-## Jornada de dados 2024
+Você precisa conhecer o CRUD.
 
-Nossa missão é fornecer o melhor ensino em engenharia de dados
+O principal responsável por tornar isso possível é o ORM
 
-Se você quer:
+![Imagem ORM](assets/orm.png)
 
-1) Construir uma base sólida em Python e SQL
-2) Aprender as principais habilidades e ferramentas de engenharia de dados
-3) Criar ou melhorar seu portfólio de dados
-4) Criar ou aumentar o seu networking na área
-5) Mudar ou dar o próximo passo em sua carreira
+## Instalação via docker
 
-A Jornada de Dados é o seu lugar
+```bash
+docker-compose up -d --build
+```
 
-## Metodologia
+### Uso
 
-Acredito no ensino ao vivo, **são mais de 20 workshops no total**
+Frontend:
+Acesse o endereço http://localhost:8501
 
-Os encontros são aos **sábados ás 9 horas, são 4 horas de workshop**
+### Documentação
 
-## Detalhe das aulas
+Backend:
+Acesse o endereço http://localhost:8000/docs
 
-### [Workshop 24/01: Automação Data Quality Excel Etl](./00-automacao-data-qualiy-excel-etl/)
+## Nossa estrutura de pastas e arquivos
 
-* Criando uma colletor de excel em python
-* Qualidade com Pydantic
-* Versionamento com Git e Github
-* Documentando com Mkdcos
-* Observabilidade com Sentry
-* UI com Streamlit (se eu não achar nada mais fácil até lá)
+```bash
+├── README.md # arquivo com a documentação do projeto
+├── backend # pasta do backend (FastAPI, SQLAlchemy, Uvicorn, Pydantic)
+├── frontend # pasta do frontend (Streamlit, Requests, Pandas)
+├── docker-compose.yml # arquivo de configuração do docker-compose (backend, frontend, postgres)
+├── poetry.lock # arquivo de lock do poetry
+└── pyproject.toml # arquivo de configuração do poetry
+```
 
-### [Workshop 27/01: Estruturando um projeto e um processo de dados](https://github.com/lvgalvao/DataProjectStarterKit)
+## Nosso Backend
 
-* Introdução aos 12 fatores
-* Versionamento com Git e Github
-* Migrando para Python 3.12 com Pyenv
-* Ambiente virtual com PIP, Poetry e Conda
-* Documentação com Mkdocs
-* Teste sua aplicação com Pyenv
-* Criando um fluxo de trabalho com pré-commit
-* Estruturando uma PR e criando um processo
-* Garantindo conformidade com CI/CD
-  
-### [Workshop 24/02: Pydantic, Data Quality e TDD em Dados](./02-pydantic-data-quality-e-tdd-aplicado-em-projeto-de-dados/)
+Nosso backend vai ser uma API, que será responsável por fazer a comunicação entre o nosso frontend com o banco de dados. Vamos detalhar cada uma das pastas e arquivos do nosso backend.
 
-* Pydantic para Modelagem de Dados
-* Garantindo Qualidade de Dados
-* Test-Driven Development em Dados com Pytest
-* Estratégias de Validação de Dados
-* Pydantic e TDD: Casos Práticos
+### FastAPI
 
-### [Workshop 09/03: Infra, Linux, Docker](./03-infra-linux-docker-em-projeto-de-dados/)
+O FastAPI é um framework web para construir APIs com Python. Ele é baseado no Starlette, que é um framework assíncrono para construir APIs. O FastAPI é um framework que está crescendo muito, e que tem uma curva de aprendizado muito baixa, pois ele é muito parecido com o Flask.
 
-* Fundamentos de Infraestrutura para Dados
-* Linux Essencial para Engenheiros de Dados
-* Docker: Containerização em Dados
-* Criando Ambientes de Dados com Docker
-* Melhores Práticas em Infra de Dados
+### Uvicorn
 
-### [Workshop 23/03: Airflow Workflow Orchestration Deploy](./04-workflow-orchestration-deploy-airflow/)
+O Uvicorn é um servidor web assíncrono, que é baseado no ASGI, que é uma especificação para servidores web assíncronos. O Uvicorn é o servidor web recomendado pelo FastAPI, e é o servidor que vamos utilizar nesse projeto.
 
-* Introdução ao Airflow para Orquestração
-* Configurando Airflow: Melhores Práticas
-* Desenvolvendo Workflows Eficientes no Airflow
-* Deploy de Workflows com Airflow
-* Monitoramento e Troubleshooting no Airflow
+### SQLAlchemy
 
-### [Workshop 13/04: Redis, MongoDB, NoSQL](./05-redis-mongodb-esse-tal-de-nosql/)
+O SQLAlchemy é uma biblioteca para fazer a comunicação com o banco de dados. Ele é um ORM (Object Relational Mapper), que é uma técnica de mapeamento objeto-relacional que permite fazer a comunicação com o banco de dados utilizando objetos.
 
-* Introdução ao NoSQL: Redis e MongoDB
-* Redis para Caching e Gerenciamento de Dados
-* MongoDB: Modelagem e Consultas
-* Comparativo NoSQL: Redis vs MongoDB
-* Casos de Uso: Redis e MongoDB
+Uma das principais vantagens de trabalhar com o SQLAlchemy é que ele é compatível com vários bancos de dados, como MySQL, PostgreSQL, SQLite, Oracle, Microsoft SQL Server, Firebird, Sybase e até mesmo o Microsoft Access.
 
+Além disso, ele realiza a sanitização dos dados, evitando ataques de SQL Injection.
 
-### [Workshop 27/04: REST API, FastAPI, Deploys](/06-restAPI-fastAPI-deploy/)
+![imagem](assets/sqlinjection.jpeg)
 
-* Desenvolvendo REST APIs Eficientes
-* FastAPI: Criação e Documentação
-* Estratégias de Deploy para APIs
-* Segurança e Escalabilidade em APIs
-* APIs com FastAPI: Estudos de Caso
+Outro ponto, é que você pode trabalhar com métodos nativos do Python, como por exemplo o filter, que é muito utilizado para fazer filtros em listas. Isso facilita muito a nossa vida, pois não precisamos aprender uma nova linguagem para fazer a comunicação com o banco de dados. Quem tiver familidade com Pandas, vai se sentir em casa.
 
+### Pydantic
 
-### [Workshop 11/05: Arquitetura Streaming com Kafka](./07-spark-kafka-streaming-data-processing/)
+O Pydantic é uma biblioteca para fazer a validação de dados. Ele é utilizado pelo FastAPI para fazer a validação dos dados que são recebidos na API, e também para definir os tipos de dados que são retornados pela API.
 
-* Introdução ao Processamento de Streaming
-* Apache Kafka: Fundamentos e Práticas
-* Desafios no Streaming de Dados
-* Casos Práticos Kafka
+## docker-compose.yml
 
-### [Workshop 25/05: Arquitetura de eventos com Amazon SNS, SQS, RabbitMQ](./08-amazon-sns-sqs-rabbit-mq/)
+Esse arquivo `docker-compose.yml` define uma aplicação composta por três serviços: `postgres`, `backend` e `frontend`, e cria uma rede chamada `mynetwork`. Vou explicar cada parte em detalhes:
 
-* Mensageria com Amazon SNS e SQS
-* RabbitMQ: Configuração e Uso
-* Comparação: SNS, SQS, RabbitMQ
-* Padrões de Mensageria na Cloud
-* Casos de Uso em Sistemas Distribuídos
+### Services:
 
+#### Postgres:
 
-### [Workshop 08/06: Infra as a Code com Terraforms](./09-infra-as-a-code-terraform/)
+* `image: postgres:latest`: Esse serviço utiliza a imagem mais recente do PostgreSQL disponível no Docker Hub.
+* `volumes`: Mapeia o diretório `/var/lib/postgresql/data` dentro do contêiner do PostgreSQL para um volume chamado `postgres_data` no sistema hospedeiro. Isso permite que os dados do banco de dados persistam mesmo quando o contêiner é desligado.
+* `environment`: Define variáveis de ambiente para configurar o banco de dados PostgreSQL, como nome do banco de dados (`POSTGRES_DB`), nome de usuário (`POSTGRES_USER`) e senha (`POSTGRES_PASSWORD`).
+* `networks`: Define que este serviço está na rede chamada `mynetwork`.
 
-* Introdução a Infraestrutura como Código
-* Terraform: Conceitos Básicos
-* Gerenciando Cloud com Terraform
-* Segurança e Compliance com Terraform
-* Terraform: Casos de Uso Práticos
+#### Backend:
 
-### [Workshop 06/07: Prometheus, Datadog, Sentry](./10-prometheus-datadog-sentry-monitoramento/)
+* `build`: Especifica que o Docker deve construir uma imagem para esse serviço, usando um Dockerfile localizado no diretório `./backend`.
+* `volumes`: Mapeia o diretório `./backend` (no sistema hospedeiro) para o diretório `/app` dentro do contêiner. Isso permite que as alterações no código fonte do backend sejam refletidas no contêiner em tempo real.
+* `environment`: Define a variável de ambiente `DATABASE_URL`, que especifica a URL de conexão com o banco de dados PostgreSQL.
+* `ports`: Mapeia a porta `8000` do sistema hospedeiro para a porta `8000` do contêiner, permitindo que o serviço seja acessado através da porta `8000`.
+* `depends_on`: Indica que este serviço depende do serviço `postgres`, garantindo que o banco de dados esteja pronto antes que o backend seja iniciado.
+* `networks`: Também define que este serviço está na rede `mynetwork`.
 
-* Monitoramento com Prometheus
-* Datadog para Observabilidade de Dados
-* Sentry para Gestão de Erros
-* Integrando Prometheus, Datadog e Sentry
-* Melhores Práticas de Monitoramento
+#### Frontend:
 
-### [Workshop 20/07: Machine Learning Ops](./12-databricks-fabrick-dw-de-milhoes/)
+* `build`: Similar ao backend, especifica que o Docker deve construir uma imagem para este serviço, usando um Dockerfile localizado no diretório `./frontend`.
+* `volumes`: Mapeia o diretório `./frontend` (no sistema hospedeiro) para o diretório `/app` dentro do contêiner, permitindo alterações em tempo real.
+* `ports`: Mapeia a porta `8501` do sistema hospedeiro para a porta `8501` do contêiner, permitindo acesso ao frontend através da porta `8501`.
+* `networks`: Define que este serviço também está na rede `mynetwork`.
 
-* Introdução ao MLOps
-* Ciclo de Vida de Modelos ML
-* Automação e Orquestração em ML
-* Monitoramento e Governança de ML
-* Casos Práticos de MLOps
+### Networks:
 
-### [Workshop 03/08: Databricks e Fabrics](./12-databricks-fabrick-dw-de-milhoes/)
+* `mynetwork`: Define uma rede personalizada para os serviços se comunicarem entre si.
 
-* Databricks: Plataforma de Big Data
-* Fabric: Gestão de Dados em Escala
-* Arquiteturas de Data Warehouse
-* Databricks e Fabric: Integração
-* DW de Milhões: Desafios e Soluções
+### Volumes:
 
-### Pré requisitos
+* `postgres_data`: Define um volume para armazenar os dados do banco de dados PostgreSQL.
 
-Para você aproveitar ao máximo do curso, é importante que você se sinta confortável com SQL e uma experiência com Python também será útil, ideal que você tenha entre 1 e 2 anos trabalhando com dados.
+### Comando `docker-compose up`:
 
-Caso você não tenha de 1 a 2 anos na área terá que estudar muito SQL e Python em paralelo, acredito que ao menos 1h por dia de estudos fora os Workshops.
+Quando você executa `docker-compose up`, o Docker Compose lerá o arquivo `docker-compose.yml`, criará os serviços conforme as definições especificadas e os iniciará. Isso significa que os contêineres para o banco de dados PostgreSQL, o backend e o frontend serão criados e conectados à rede `mynetwork`. O banco de dados será configurado com os detalhes fornecidos (nome do banco de dados, usuário e senha), e as imagens para os serviços de backend e frontend serão construídas a partir dos Dockerfiles fornecidos. Uma vez iniciados, você poderá acessar o backend através de `http://localhost:8000` e o frontend através de `http://localhost:8501`. Os dados do banco de dados serão persistidos no volume `postgres_data`.
 
-Mas fique tranquilo, temos o nosso Bootcamp de 100 dias de Python e SQL para te colocar no shape.
+## Nossa estrutura de pastas e arquivos
 
-Aqui é o lugar certo para aprender Python e SQL voltado para a engenharia de dados
+```bash
+├── backend
+│   ├── Dockerfile # arquivo de configuração do Docker
+│   ├── crud.py # arquivo com as funções de CRUD utilizando o SQL Alchemy ORM
+│   ├── database.py # arquivo com a configuração do banco de dados utilizando o SQL Alchemy 
+│   ├── main.py
+│   ├── models.py
+│   ├── requirements.txt
+│   ├── router.py
+│   └── schemas.py
+```
 
-## Plataforma e autonomia
+## Arquivo `database.py`
 
-Alternativamente, você pode acessar nossa plataforma, nossa aplicação disponibiliza uma plataforma bem user-frindly para você pode acessar ao material do curso
+O arquivo `database.py` é responsável por fazer a configuração do banco de dados utilizando o SQLAlchemy. Ele é responsável por criar a conexão com o banco de dados, e também por criar a sessão do banco de dados.
 
-## Possui dúvidas? 
+Caso queira mudar de banco de dados, você só precisa mudar a URL de conexão, que está na variável SQLALCHEMY_DATABASE_URL. o SQLAlchemy é compatível com vários bancos de dados, como MySQL, PostgreSQL, SQLite, Oracle, Microsoft SQL Server, Firebird, Sybase e até mesmo o Microsoft Access.
 
-- Fale comigo [Link do Linkedin](https://www.linkedin.com/in/lucianovasconcelosf/)
+Os principais pontos desse arquivo é a engine, que é a conexão com o banco de dados, e o SessionLocal, que é a sessão do banco de dados. O SessionLocal é quem executada as queries no banco de dados.
+
+Lembrar sempre de:
+
+1) Declarar a URL do banco
+2) Criar a engine usando o 'create_engine'
+3) Criar a sessão do banco
+4) Criar a Base do ORM (nosso Model vai herdar ele)
+5) Criar um gerador de sessão para ser reutilizado
+
+## Arquivo `models.py`
+
+O arquivo `models.py` é responsável por definir os modelos do SQLAlchemy, que são as classes que definem as tabelas do banco de dados. Esses modelos são utilizados para fazer a comunicação com o banco de dados.
+
+É aqui que definimos o nome da tabela, os campos e os tipos de dados. Conseguimos incluir campos gerados aleatoriamente, como o id e o created_at. Para o id, ao incluir o campo Integer, com o parâmetro primary_key=True, o SQLAlchemy já entende que esse campo é o id da tabela. Para o created_at, ao incluir o campo DateTime, com o parâmetro default=datetime, o SQLAlchemy já entende que esse campo é a data de criação da tabela.
+
+Lembrar:
+
+1) O models é agnóstico ao banco, ele não sabe qual é o banco que é criado! Ele vai importar o base do database!
+
+2) Declarar sua Tabela
+
+## Arquivo `schemas.py`
+
+O arquivo `schemas.py` é responsável por definir os schemas do Pydantic, que são as classes que definem os tipos de dados que serão utilizados na API. Esses schemas são utilizados para fazer a validação dos dados que são recebidos na API, e também para definir os tipos de dados que são retornados pela API.
+
+O pydantic é a principal biblioteca para validação de dados em Python. Ela é utilizada pelo FastAPI para fazer a validação dos dados recebidos na API, e também para definir os tipos de dados que são retornados pela API.
+
+Além disso, ela possui uma integração muito boa com o SQLAlchemy, que é a biblioteca que utilizamos para fazer a comunicação com o banco de dados.
+
+Outra vantagem são os seus tipos pré-definidos, que facilitam muito a nossa vida. Por exemplo, se você quer definir um campo que aceita apenas números positivos, você pode utilizar o PositiveInt. Se você quer definir um campo que aceita apenas determinadas categorias, você pode utilizar o construtor constrains.
+
+Detalhe que criamos schemas diferentes para os retornos da nossa API. Isso é uma boa prática, pois permite que você tenha mais flexibilidade para alterar os schemas no futuro.
+
+Temos o schema `ProductBase`, que é o schema base para o cadastro de produtos. Esse schema é utilizado para fazer a validação dos dados que são recebidos na API, e também para definir os tipos de dados que são retornados pela API.
+
+Temos o schema `ProductCreate`, que é o schema que é retornado pela API. Ele é uma classe que herda do schema `ProductBase`, e possui um campo a mais, que é o id. Esse campo é utilizado para identificar o produto no banco de dados.
+
+Temos o schema `ProductResponse`, que é o schema que é retornado pela API. Ele é uma classe que herda do schema `ProductBase`, e possui dois campos a mais, que é o id e o created_at. Esses campos são gerados pelo nosso banco de dados.
+
+Temos o schema `ProductUpdate`, que é o schema que é recebido pela API para update. Ele possui os campos opcionais, pois não é necessário enviar todos os campos para fazer o update.
+
+## Arquivo `crud.py`
+
+O arquivo `crud.py` é responsável por definir as funções de CRUD utilizando o SQLAlchemy ORM. Essas funções são utilizadas para fazer a comunicação com o banco de dados. É nele que definimos as funções de listagem, criação, atualização e remoção de produtos. É onde os dados são persistidos no banco de dados.
+
+## Arquivo `router.py`
+
+O arquivo `router.py` é responsável por definir as rotas da API utilizando o FastAPI. É aqui que definimos as rotas, e também as funções que serão executadas em cada rota. Todas as funções definidas aqui recebem um parâmetro, que é o parâmetro request, que é o objeto que contém os dados da requisição.
+
+Os principais parametros são o path, que é o caminho da rota, o methods, que são os métodos HTTP que a rota aceita, e o response_model, que é o schema que é retornado pela rota.
+
+```python
+@router.post("/products/", response_model=ProductResponse)
+```
+Importante destacar que o FastAPI utiliza o conceito de type hints, que são as anotações de tipos. Isso permite que o FastAPI faça a validação dos dados que são recebidos na API, e também para definir os tipos de dados que são retornados pela API. Por exemplo, ao definir o parâmetro product do tipo ProductResponse, o FastAPI já entende que os dados recebidos nesse parâmetro devem ser do tipo ProductResponse.
+
+Conseguimos também retornar parâmetros pelo nosso path, no caso do delete, por exemplo, precisamos passar o id do produto que queremos deletar. Para isso, utilizamos o path /products/{product_id}, e definimos o parâmetro product_id na função delete_product.
+
+```python
+@router.get("/products/{product_id}", response_model=ProductResponse)
+def read_product_route(product_id: int, db: Session = Depends(get_db)):
+    db_product = get_product(db, product_id=product_id)
+    if db_product is None:
+        raise HTTPException(status_code=404, detail="Product not found")
+    return db_product
+```
+
+## Arquivo `main.py`
+
+O arquivo `main.py` é responsável por definir a aplicação do FastAPI, e também por definir o servidor web Uvicorn. É aqui que definimos o servidor web, e também as configurações do servidor web, como o host e a porta.
+
+
+## Nosso Frontend
+
+Nosso frontend vai ser uma aplicação que vai consumir a nossa API, e vai ser responsável por fazer o cadastro, alteração e remoção de produtos. Vamos detalhar cada uma das pastas e arquivos do nosso frontend.
+
+### Streamlit
+
+O Streamlit é uma biblioteca para construir aplicações web com Python. Ele é muito utilizado para construir dashboards, e também para construir aplicações que consomem APIs.
+
+### Requests
+
+O Requests é uma biblioteca para fazer requisições HTTP com Python. Ele é muito utilizado para consumir APIs, e também para fazer web scraping.
+
+### Pandas
+
+O Pandas é uma biblioteca para manipulação de dados com Python. Ele é muito utilizado para fazer análise de dados, e também para construir dashboards.
+
+
+
+## Deploy <> Em construção
+
+
+
+
+
+### AWS ECS
+
+Além disso, nesse projeto vamos apresentar como colocar em produção um projeto utilizando containers Docker, utilizando o AWS ECS (Amazon Elastic Container Service).
+
+Se você quer ter toda a facilidade do Docker, garantir que o seu ambiente de desenvolvimento e de produção são idênticos, e ainda ter a possibilidade de escalar a sua aplicação, esse projeto é para você.
+
+A AWS ECS é um serviço de orquestração de containers, que permite que você execute containers Docker de forma escalável e altamente disponível. Com ele, você não precisa se preocupar com a infraestrutura, pois a AWS cuida de tudo para você.
+
+### AMAZON ECS
+
+É um serviço de orquestração de containers, que permite que você execute containers Docker de forma escalável e altamente disponível. A vantagem principal é que você não precisa se preocupar com a orquestração dos containers (Kubernetes) mas tenha todas as vantagens de utilizar containers Docker.
+
+### AMAZON ECS FARGATE
+
+O ECS Fargate é um serviço que permite que você execute containers Docker sem precisar gerenciar servidores. Ou seja, todo o gerenciamento de servidores, balanceamento de carga, auto scaling, etc, é feito pela AWS. É um serviço ainda mais gerenciado que o ECS, pois você não precisa se preocupar com a infraestrutura.
+
+### Conceitos
+
+[Imagem arquitetura](assets/arquitetura.png)
+
+#### Cluster
+
+Um cluster é um grupo de instâncias EC2 (máquinas) que executam as suas tarefas. Ou seja, as máquinas onde os meus containers vão ser executados.
+
+#### Task Definition
+
+Uma task definition é um arquivo de configuração (com a formatação JSON) que define como a sua aplicação vai ser executada. Nesse arquivo você define qual imagem Docker vai ser utilizada, qual o poder computacional necessário, qual o volume que vai ser utilizado, etc.
+
+#### Task
+
+Uma task é uma instância de uma task definition. Ou seja, é uma execução da sua aplicação. Por exemplo, se você tem uma task definition que define que a sua aplicação vai ser executada com 2 instâncias, você terá 2 tasks executando a sua aplicação. Aplicado ao Airflow que vimos no Workshop 02, podemos subir mais de uma instância do Airflow, para garantir que a nossa aplicação vai estar sempre disponível. Além disso, podemos configurar para subir mais instâncias quando a CPU estiver alta, por exemplo.
+
+#### Service
+
+Um service é um grupo de tasks que são executadas juntas. Por exemplo, se você tem uma task definition que define que a sua aplicação vai ser executada com 2 instâncias, você terá 2 tasks executando a sua aplicação. Essas 2 tasks formam um service. Se alguma tarefa falhar, o service vai garantir que ela vai ser executada novamente. O service também pode ser utilizado para balancear a carga entre as tasks.
