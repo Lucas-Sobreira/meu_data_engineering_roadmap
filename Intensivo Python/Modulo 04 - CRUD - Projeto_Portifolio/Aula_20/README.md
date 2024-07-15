@@ -1,0 +1,1 @@
+1) Criar e configurar os arquivos do Docker. Tanto o <I style="color:#FFFF00">docker-compose</I> como o <I style="color:#FFFF00">DockerFile</I>;
