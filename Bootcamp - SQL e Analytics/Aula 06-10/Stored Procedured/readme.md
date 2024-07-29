@@ -1,10 +1,3 @@
-```sql
-    -- Atualiza o saldo do cliente
-    UPDATE clients
-    SET saldo = saldo + CASE WHEN p_tipo = 'd' THEN -p_valor ELSE p_valor END
-    WHERE id = p_cliente_id;
-    ```
-
 ## Criação das tabelas - clients e transactions
 
 ```sql
