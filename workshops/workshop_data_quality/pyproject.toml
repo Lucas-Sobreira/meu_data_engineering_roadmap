@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "workshop-data-quality"
+version = "0.1.0"
+description = ""
+authors = ["Lucas-Sobreira <lucas-andrade2011@live.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+mkdocs = "^1.6.1"
+mkdocs-mermaid2-plugin = "^1.1.1"
+mkdocs-material = "^9.5.34"
+mkdocstrings = {extras = ["python"], version = "^0.26.0"}
+pytest = "^8.3.2"
+taskipy = "^1.13.0"
+isort = "^5.13.2"
+black = "^24.8.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.taskipy.tasks]
+format = """
+isort .
+black .
+"""
+kill = "kill -9 $(lsof -t -i :8000)"
+test = "pytest -v"
+run = """
+python3 app/main.py
+"""
+doc = "mkdocs serve"
