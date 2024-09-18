@@ -1,0 +1,110 @@
+{
+	"id_produto": {
+		"0": 1,
+		"1": 2,
+		"2": 3,
+		"3": 4,
+		"4": 5,
+		"5": 6,
+		"6": 7,
+		"7": 8,
+		"8": 9,
+		"9": 10
+	},
+	"nome": {
+		"0": "Produto A",
+		"1": "Produto B",
+		"2": "Produto C",
+		"3": "Produto D",
+		"4": "Produto E",
+		"5": "Produto F",
+		"6": "Produto G",
+		"7": "Produto H",
+		"8": "Produto I",
+		"9": "Produto J"
+	},
+	"quantidade": {
+		"0": 100,
+		"1": 150,
+		"2": 200,
+		"3": 50,
+		"4": 120,
+		"5": 80,
+		"6": 60,
+		"7": 30,
+		"8": 90,
+		"9": 20
+	},
+	"preco": {
+		"0": 10,
+		"1": 20,
+		"2": 15,
+		"3": 5,
+		"4": 22,
+		"5": 45,
+		"6": 120,
+		"7": 85,
+		"8": 55,
+		"9": 100
+	},
+	"categoria": {
+		"0": "eletronicos",
+		"1": "mobilia",
+		"2": "informatica",
+		"3": "decoracao",
+		"4": "eletronicos",
+		"5": "mobilia",
+		"6": "informatica",
+		"7": "decoracao",
+		"8": "eletronicos",
+		"9": "mobilia"
+	},
+	"email": {
+		"0": "produtoA@example.com",
+		"1": "produtoA@example.com",
+		"2": "produtoA@example.com",
+		"3": "produtoA@example.com",
+		"4": "produtoA@example.com",
+		"5": "produtoA@example.com",
+		"6": "produtoA@example.com",
+		"7": "produtoA@example.com",
+		"8": "produtoA@example.com",
+		"9": "produtoA@example.com"
+	},
+	"valor_total_estoque": {
+		"0": 1000,
+		"1": 3000,
+		"2": 3000,
+		"3": 250,
+		"4": 2640,
+		"5": 3600,
+		"6": 7200,
+		"7": 2550,
+		"8": 4950,
+		"9": 2000
+	},
+	"categoria_normalizada": {
+		"0": "ELETRONICOS",
+		"1": "MOBILIA",
+		"2": "INFORMATICA",
+		"3": "DECORACAO",
+		"4": "ELETRONICOS",
+		"5": "MOBILIA",
+		"6": "INFORMATICA",
+		"7": "DECORACAO",
+		"8": "ELETRONICOS",
+		"9": "MOBILIA"
+	},
+	"disponibilidade": {
+		"0": true,
+		"1": true,
+		"2": true,
+		"3": true,
+		"4": true,
+		"5": true,
+		"6": true,
+		"7": true,
+		"8": true,
+		"9": true
+	}
+}

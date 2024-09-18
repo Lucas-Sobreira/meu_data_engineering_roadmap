@@ -15,6 +15,12 @@ pytest = "^8.3.2"
 taskipy = "^1.13.0"
 isort = "^5.13.2"
 black = "^24.8.0"
+python-dotenv = "^1.0.1"
+sqlalchemy = "^2.0.34"
+psycopg2 = "^2.9.9"
+psycopg2-binary = "^2.9.9"
+pandera = {extras = ["io"], version = "^0.20.4"}
+duckdb = "^1.0.0"
 
 
 [build-system]
