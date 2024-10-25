@@ -4,7 +4,7 @@ import os
 import random 
 import time 
 
-# Carrgar variáveis de ambiente do arquivo .env 
+# Carregar variáveis de ambiente do arquivo .env 
 load_dotenv()
 
 # Configurações do produtor
@@ -13,10 +13,8 @@ conf = {
     'sasl.mechanisms': 'PLAIN',
     'security.protocol': 'SASL_SSL',
     'sasl.username': os.getenv('SASL_USERNAME'),
-    'sasl.password': os.getenv('SASL_PASSWORD'),
-    'client.id': os.getenv('CLIENT_ID')
+    'sasl.password': os.getenv('SASL_PASSWORD')
 }
-
 
 producer = Producer(**conf)
 
@@ -29,6 +27,7 @@ def delivery_report(err, msg):
 
 # Produção de mensagens simulando um sensor de geladeira
 topic = os.getenv('TOPIC')
+
 for i in range(10):
     temperature = random.uniform(-10, 30)  # Temperatura aleatória entre -10 e 30 graus Celsius
     key = f"sensor{i % 3}"  # Usar diferentes chaves para distribuir entre partições
