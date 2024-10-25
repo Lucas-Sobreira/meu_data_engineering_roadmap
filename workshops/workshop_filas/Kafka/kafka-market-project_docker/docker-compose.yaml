@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  producer: 
+    build: ./producer
+    environment:
+      - BOOTSTRAP_SERVERS=${BOOTSTRAP_SERVERS}
+      - SASL_USERNAME=${SASL_USERNAME}
+      - SASL_PASSWORD=${SASL_PASSWORD}
+      - TOPIC=${TOPIC}
+      - CLIENT_ID=${CLIENT_ID}
+    deploy: 
+      replicas: 5
+
+  consumer:
+    build: ./consumer
+    environment:
+      - BOOTSTRAP_SERVERS=${BOOTSTRAP_SERVERS}
+      - SASL_USERNAME=${SASL_USERNAME}
+      - SASL_PASSWORD=${SASL_PASSWORD}
+      - TOPIC=${TOPIC}
+      - CLIENT_ID=${CLIENT_ID}
+      - POSTGRES_HOST=${POSTGRES_HOST}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_PORT=${POSTGRES_PORT}
+
+  dashboard: 
+    build: ./dashboard
+    environment: 
+      - POSTGRES_HOST=${POSTGRES_HOST}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_PORT=${POSTGRES_PORT}
+    ports:
+      - "8501:8501"
