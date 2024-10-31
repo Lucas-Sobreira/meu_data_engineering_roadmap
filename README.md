@@ -1,1 +1,1 @@
-<h1>Atualmente estou revisando alguns conceitos de Python, praticando através de desafios e aulas do Luciano Galvão</h1>
+<h1>Aulas e desafios do Luciano Galvão sobre Data Engineering</h1>
