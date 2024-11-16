@@ -10,7 +10,7 @@ Clique aqui para ir para o repositório do Luciano, conteúdo do DBT: <a href="h
 <img src="./imgs/AWS_RDS.png"></img>
 
 2) Configurar o Banco de Dados com os Schemas das tabelas e os Dados. 
-   Nesse caso, utilizar um ".sql" com essas informações
+   Nesse caso, foi utilizado o "northwind.sql" como padrão de configuração do Banco.
 
 3) Instalar o DBT: 
 ``` bash: 
