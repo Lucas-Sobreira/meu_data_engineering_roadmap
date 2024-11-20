@@ -31,3 +31,5 @@ dbt run
 ## Criando Banco de Dados AWS
 
 Foi acessado o portal da AWS e criada uma instância do <b>AWS RDS</b>.
+
+inicio do vídeo: <a href="https://jornadadedados.alpaclass.com/c/cursos/YbsKtM?lessonSlug=3kzubm">link aula</a>
