@@ -2,7 +2,12 @@ link de referência Medium: <a href="https://medium.com/@pahlavan.maryam/streaml
 
 # Repositório Clonado
 
-Clique aqui para ir para o repositório do Luciano, conteúdo do DBT: <a href="https://github.com/lvgalvao/dbt-core-northwind-project">repo</a>
+Clique aqui para ir para o repositório do Luciano, conteúdo do DBT: 
+
+# Boas práticas DBT-Core
+Documentação do DBT-Core
+<a href="https://docs.getdbt.com/best-practices/how-we-structure/2-staging">best-practices</a>
+
 
 # Passo a Passo para rodar o DBT
 
@@ -28,7 +33,103 @@ dbt init
 dbt debug 
 ``` 
 
-6) Rodar o DBT: 
+# DBT Seeds
+
+É possível: 
+   -  criar tabela;
+   -  inserir dados;
+   
+<p>Basta colocar dentro da pasta Seeds do projeto DBT, um arquivo para atualizar a tabela do Banco de Dados. No exemplo foi utilizado um arquivo .csv para criar a linha do "Rio de Janeiro".</p>
+
+``` bash: 
+dbt seed
+``` 
+
+# DBT Models
+
+Tudo que estiver na pasta models no final vai virar Tabela ou View.
+
+Sempre que quiser rodar as mudanças da pasta do projeto do DBT
 ``` bash: 
 dbt run
 ```
+
+## RAW:
+
+✅ Subdiretorios baseado na fonte dos dados.
+
+Criar uma pasta com o nome da fonte dos dados e escrever um arquivo .sql
+``` sql: 
+select * 
+from nova_tabela -- Arquivo apontando para o "Seed"
+```
+
+## Staging:
+✅ Renomear
+✅ Tipagem de dados
+✅ Calculos simples
+✅ Categorização
+
+Criar uma pasta com o nome da fonte dos dados e escrever um arquivo .sql
+``` sql: 
+with renamed as (
+    select 
+        category_id as id,
+        category_name as name, 
+        description,
+        picture, 
+        update_at
+    from 
+        {{ref('raw_crm__nova_tabela')}} -- Arquivo apontando para a "Raw"
+)
+
+select * from renamed
+```
+
+## Intermediate:
+
+✅ Subdiretorios baseado nos grupos de negócio
+
+❌ Não recomendado para usuários finais
+
+✅ Isolar operações complexas
+
+Criar uma pasta com o nome da área de negócio e escrever um arquivo .sql
+``` sql: 
+with int_aggregate_by_category_id as (
+    select
+        id, 
+        count(*)
+    from 
+        {{ref("stg_crm__nova_tabela")}} -- Arquivo apontando para a "Staging"
+    group by 
+        id
+)
+
+select * from int_aggregate_by_category_id
+```
+
+## Mart:
+✅ Agrupar por departamento ou área de interesse
+
+✅ Nomear por entidade 
+
+❌ Construa o mesmo conceito de forma diferente para equipes diferentes. "finance_orders" and "marketing_orders" são consideradas tipicamente um anti-padrão.
+
+❌ Muitos joins em um Data Mart.
+
+Criar uma pasta com o arquivo .sql que contém os dados que serão utilizados pelo usuário final.
+``` sql: 
+with vendas as (
+    select 
+        * 
+    from 
+        {{ ref('int_aggregate_by_category_id')}} -- Arquivo apontando para a "intermediate"
+)
+
+select * from vendas
+```
+
+# Macros
+
+É possível utilização de Macros para auxiliar no update, criação de tabelas. Auxiliando no uso de "unique_id", garantir que o schema não seja alterado ou que seja apenas alterado com colunas novas, etc.
