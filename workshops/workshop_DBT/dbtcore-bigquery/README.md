@@ -4,8 +4,7 @@
 [Excalidraw](https://link.excalidraw.com/l/8pvW6zbNUnD/394XJa9Ha8M)
 
 ### Organizado
-[Excalidraw](https://excalidraw.com/#json=wN9O9-iZgr8uBR_UqyHed,gclrmtTy5sCXjhraicClJw)
-
+![Excalidraw](./image/excalidraw_resumo.png)
 Objetivos:
 
 1) Configurar bigquery
