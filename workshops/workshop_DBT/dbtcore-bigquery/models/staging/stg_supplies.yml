@@ -1,0 +1,12 @@
+models:
+  - name: stg_supplies
+    description: >
+      Lista dos dados de despesas de suprimentos com limpeza e transformação básica aplicada.
+
+      Uma linha por custo de suprimento, não por suprimento. À medida que os custos dos suprimentos flutuam, eles recebem uma nova linha com um novo UUID. Portanto, pode haver várias linhas por supply_id.
+    columns:
+      - name: supply_uuid
+        description: A chave única dos nossos suprimentos por custo.
+        data_tests:
+          - not_null
+          - unique
