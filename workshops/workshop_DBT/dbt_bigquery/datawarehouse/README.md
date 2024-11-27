@@ -1,15 +1,6 @@
-Welcome to your new dbt project!
+# Observações Gerais do projeto: 
 
-### Using the starter project
+### Macros
+A macro "generate_schema_name.sql" gera os nomes de schema baseado nos nomes que você for setando durante o seu projeto, sem compromoter as variáveis já setadas no "cliente" do serviço do DBT.
 
-Try running the following commands:
-- dbt run
-- dbt test
-
-
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+É possível criar/desenvolver qualquer função e chama-la. Basta criar uma Macro e depois, dentro do código SQL, chamar passando a coluna que queira transformar. 
