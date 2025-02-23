@@ -22,8 +22,7 @@ def load_settings() -> dict:
         "aws_access_key_id": os.getenv("AWS_ACCESS_KEY_ID"),
         "aws_secret_access_key": os.getenv("AWS_SECRET_ACCESS_KEY"),
         "region_name": os.getenv("REGION_NAME"),
-        "bucket_name": os.getenv("BUCKET_NAME"),
-        "s3_key": os.getenv("S3_KEY")
+        "bucket_name": os.getenv("BUCKET_NAME")
     }
     return settings
 
@@ -34,9 +33,9 @@ def config_s3(settings: dict) -> str:
     try:
         s3_client = boto3.client(
             's3',
-            aws_access_key_id= settings['AWS_ACCESS_KEY_ID'],
-            aws_secret_access_key= settings['AWS_SECRET_ACCESS_KEY'],
-            region_name= settings['REGION_NAME']
+            aws_access_key_id= settings['aws_access_key_id'],
+            aws_secret_access_key= settings['aws_secret_access_key'],
+            region_name= settings['region_name']
         )
         logging.info("Cliente S3 configurado com sucesso.")
         return s3_client        
@@ -83,7 +82,7 @@ def arquivos_output(output_dir: str, path_csv: str) -> None:
     """
 
     df = pd.read_csv(path_csv)
-    file_name = os.path.basename(path_csv)
+    file_name = os.path.basename(path_csv).split('.')[0]
 
     # Salvando o arquivo no formato Json.
     json_file = os.path.join(output_dir, "json/",f"{file_name}.json")
@@ -94,15 +93,16 @@ def arquivos_output(output_dir: str, path_csv: str) -> None:
     table = pa.Table.from_pandas(df)
     pq.write_table(table, parquet_file)
 
-def upload_arquivos_para_s3(arquivos: List[str], s3_client, buckt_name: str) -> None:
+def upload_arquivos_para_s3(arquivos: List[str], output_dir: str, s3_client, bucket_name: str) -> None:
     """
         Faz o upload dos arquivos .parquet para o S3.
     """
     for arquivo in arquivos:
         nome_arquivo: str = os.path.basename(arquivo)
+        caminho_completo = os.path.join(output_dir, 'parquet/', arquivo)
         try:
-            logging.info(f"Tentando fazer upload de '{nome_arquivo}' para o bucket '{buckt_name}'...")
-            # s3_client.upload_file(arquivo, buckt_name, nome_arquivo)
+            logging.info(f"Tentando fazer upload de '{nome_arquivo}' para o bucket '{bucket_name}'...")
+            s3_client.upload_file(caminho_completo, bucket_name, 'parquet/' + nome_arquivo)
             logging.info(f"{nome_arquivo} foi enviado para o S3.")
         except Exception as e:
             logging.info(f"Erro ao enviar '{nome_arquivo}' para o S3: {e}")
@@ -151,7 +151,7 @@ def pipeline(source_dir: str, output_dir: str) -> None:
     # Realiza o upload dos arquivos para o S3 
     arquivos = os.listdir(output_dir + "parquet/")
     bucket_name = settings['bucket_name']
-    upload_arquivos_para_s3(arquivos, s3_client, bucket_name)
+    upload_arquivos_para_s3(arquivos, output_dir, s3_client, bucket_name)
 
     # Deleta os arquivos da pasta Source
     logging.info("Deletando os arquivos locais")
