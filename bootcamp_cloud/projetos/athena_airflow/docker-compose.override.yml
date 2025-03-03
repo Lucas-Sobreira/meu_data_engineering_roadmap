@@ -1,0 +1,8 @@
+services:
+  webserver: 
+    volumes:
+      - ./src:/usr/local/airflow/files
+
+  scheduler: 
+    volumes:
+      - ./src:/usr/local/airflow/files
