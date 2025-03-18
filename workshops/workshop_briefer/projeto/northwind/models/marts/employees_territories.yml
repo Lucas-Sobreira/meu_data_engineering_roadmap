@@ -1,0 +1,27 @@
+models:   
+  - name: employees_territories
+    description: Relatorio sobre empregados e suas localidades
+    columns:
+      - name: last_name
+        description: Sobrenome  
+      - name: first_name
+        description: Primeiro Nome
+      - name: title
+        description: Cargo
+      - name: title_of_courtesy
+        description: Título de Cortesia
+      - name: birth_date
+        description: Data de Aniversário
+      - name: hire_age
+        description: Com quantos anos foi contratado
+      - name: city
+        description: Cidade local
+      - name: country
+        description: País local
+      - name: territory_description
+        description: Provincia
+      - name: region_description
+        description: regiao localizado
+      - name: gender
+        description: sexualidade biológica
+      

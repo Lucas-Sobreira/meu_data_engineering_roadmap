@@ -1,0 +1,12 @@
+northwind:
+  target: dev
+  outputs:
+    dev:
+      dbname: "{{ env_var('DB_NAME') }}"
+      host: "{{ env_var('DB_HOST') }}"
+      user: "{{ env_var('DB_USER') }}"
+      pass: "{{ env_var('DB_PASS') }}"
+      port: "{{ env_var('DB_PORT') | as_number }}"
+      schema: "{{ env_var('DB_SCHEMA') }}"
+      threads: "{{ env_var('DB_THREADS') | as_number }}"
+      type: "{{ env_var('DB_TYPE') }}"

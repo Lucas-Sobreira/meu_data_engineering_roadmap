@@ -1,0 +1,39 @@
+version: '3.8'
+
+networks:
+  net:
+    driver: bridge
+
+services:
+  dbt-core:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    environment:
+      DBT_PROFILES_DIR: /northwind
+    volumes:
+      - .:/user/app
+      - ./dbt/target:/usr/app/dbt/target
+      - ./northwind/profiles.yml:/northwind/profiles.yml
+    ports: 
+      - 8081:8081
+    networks:
+      - net
+    
+  briefer:
+    image: briefercloud/briefer
+    container_name: briefer
+    ports:
+      - "3000:3000"
+    volumes:
+      - briefer_psql_data:/var/lib/postgresql/data
+      - briefer_jupyter_data:/home/jupyteruser
+      - briefer_briefer_data:/home/briefer
+    restart: unless-stopped
+
+volumes:
+  briefer_psql_data:
+  briefer_jupyter_data:
+  briefer_briefer_data:
