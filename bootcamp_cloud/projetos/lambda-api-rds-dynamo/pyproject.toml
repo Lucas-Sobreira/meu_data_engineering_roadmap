@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "projeto-local"
+name = "lambda-api-rds-dynamo"
 version = "0.1.0"
 description = ""
 authors = ["Lucas-Sobreira <lucas-andrade2011@live.com>"]
